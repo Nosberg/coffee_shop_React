@@ -1,0 +1,50 @@
+.footer
+    padding: 50px 10px 20px 10px
+    position: relative
+    &__items
+        display: flex
+        justify-content: center
+    &__item
+        margin-left: 40px
+        position: relative
+        &:nth-child(1) a::before
+            content: url('../../img/logo_black.png')
+            position: absolute
+            left: -30px
+            top: -17px
+        a
+            font-weight: 400
+            font-size: 12px
+            line-height: 17px
+            color: #000
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            transition: all 0.3s
+            &:hover
+                color: red
+    &__divider_left
+        width: 60px
+        height: 2px
+        background-color: #000
+        position: absolute
+        left: -3px
+        top: 54%
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+    &__divider_right
+        width: 60px
+        height: 2px
+        background-color: #000
+        position: absolute
+        top: 54%
+        right: 3px
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+    &__wrapper
+        width: 200px
+        margin: 0 auto
+        position: relative
+    &__logo
+        display: block
+        margin: 0 auto
+        margin-top: 20px
+        width: 30px
+        position: relative
+        margin-top: 20px
