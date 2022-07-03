@@ -1,0 +1,111 @@
+.coffeeList
+    padding-top: 70px
+    padding-bottom: 30px
+    .wrapper
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        .coffeeList__wrapper
+            width: 350px
+    &__title
+        font-weight: 400
+        font-size: 24px
+        line-height: 35px
+        color: #000000
+        text-align: center
+    &__descr
+        text-align: center
+        font-weight: 400
+        font-size: 15px
+        line-height: 20px
+        color: #000000
+        margin-top: 25px
+    &__img
+        margin-left: 150px
+    .divider
+        width: 240px
+        height: 1px
+        background-color: #000
+        margin: 0 auto
+        margin-top: 60px
+    &__filters_wrapper
+        display: flex
+        justify-content: space-between
+        width: 750px
+        margin: 0 auto
+        margin-top: 60px
+    &__search_wrapper
+        display: flex
+        align-items: center
+    &__looking
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        color: #000000
+    input
+        width: 180px
+        height: 30px
+        background: #FFFFFF
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25)
+        border-radius: 4px
+        padding: 6px 36px
+        box-sizing: border-box
+        border: none
+        margin-left: 20px
+    &__filter_wrapper
+        display: flex
+        align-items: center
+    &__items
+        display: flex
+    &__filter_descr
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        color: #000000
+    &__item
+        width: 75px
+        height: 30px    
+        background: #FFFFFF
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25)
+        border-radius: 4px 0px 0px 4px
+        font-weight: 400
+        font-size: 12px
+        line-height: 17px
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-left: 35px
+        a
+            color: #000
+    &__coffee
+        box-sizing: border-box
+        display: grid
+        grid-template-columns: repeat(3, 220px)
+        grid-auto-rows: 260px
+        justify-content: space-around
+        width: 800px
+        margin: 0 auto
+        margin-top: 60px
+        gap: 60px
+        margin-bottom: 80px
+        &_item
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25)
+            border-radius: 8px
+            display: grid
+            grid-template-columns: 220px
+            box-sizing: border-box
+            grid-template-rows: auto 25px 35px 35px
+            justify-items: center
+            align-items: center
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            text-align: center
+            color: #000000
+    &__price
+        font-weight: 700
+        justify-self: flex-end
+        padding-right: 20px
+    &__country
+        justify-self: flex-end
+        padding-right: 20px
