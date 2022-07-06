@@ -4,12 +4,12 @@ import logo_black from '../../img/logo_2_black.png';
 import aromistico from '../../img/aromistico.jpg';
 import Footer from '../Footer/Footer';
 
-const CoffeeList = () => {
+const CoffeeList = ({newImg}) => {
     return (
         <main className="coffeeList">
             <div className="container">
                 <div className="wrapper">
-                    <img src={img} alt="" className="coffeeList__img" />
+                    <img src={newImg ? newImg : img} alt="" className="coffeeList__img" />
                     <div className='coffeeList__wrapper'>
                         <h2 className="coffeeList__title">About our beans</h2>
                         <div className="footer__wrapper">
@@ -93,7 +93,6 @@ const CoffeeList = () => {
                         <div className="coffeeList__price">6.99$</div>
                     </li>
                 </ul>
-                <Footer/>
             </div>
         </main>
     )

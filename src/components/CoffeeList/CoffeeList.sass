@@ -3,10 +3,10 @@
     padding-bottom: 30px
     .wrapper
         display: flex
-        justify-content: space-around
+        justify-content: space-between
         flex-wrap: wrap
         .coffeeList__wrapper
-            width: 350px
+            width: 450px
     &__title
         font-weight: 400
         font-size: 24px
@@ -80,10 +80,10 @@
     &__coffee
         box-sizing: border-box
         display: grid
-        grid-template-columns: repeat(3, 220px)
+        grid-template-columns: repeat(auto-fit, 220px)
         grid-auto-rows: 260px
         justify-content: space-around
-        width: 800px
+        max-width: 800px
         margin: 0 auto
         margin-top: 60px
         gap: 60px

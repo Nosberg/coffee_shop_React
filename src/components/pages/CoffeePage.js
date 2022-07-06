@@ -1,15 +1,15 @@
 import Header from "../Header/Header";
-import CoffeeList from "../CoffeeList/CoffeeList";
+import CoffeeDescr from "../CoffeeDescr/CoffeeDescr";
 import Footer from "../Footer/Footer";
 
-const OurCoffee = () => {
+const CoffeePage = () => {
     return (
         <>
             <Header/>
-            <CoffeeList/>
+            <CoffeeDescr/>
             <Footer/>
         </>
     )
 }
 
-export default OurCoffee;
+export default CoffeePage;

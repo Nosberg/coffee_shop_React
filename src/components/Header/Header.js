@@ -1,8 +1,12 @@
 import './Header.sass';
 
-const Header = () => {
+const Header = ({bg}) => {
+    let classNames = 'lowHeader';
+    if (bg) {
+        classNames = 'lowHeader ForYourPleasure';
+    }
     return (
-        <header className='lowHeader'>
+        <header className={classNames}>
             <div className="container">
                 <ul className="lowHeader__items">
                     <li className="lowHeader__item"><a href="#">Coffee house</a></li>
