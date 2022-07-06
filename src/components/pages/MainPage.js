@@ -10,7 +10,6 @@ const MainPage = () => {
             <MainHeader/>
             <AboutUs/>
             <OurBest/>
-            <Footer/>
         </>
         
     )

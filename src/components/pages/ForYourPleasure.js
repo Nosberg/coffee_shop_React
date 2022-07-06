@@ -9,7 +9,6 @@ const ForYourPleasure = () => {
         <>
             <Header bg={bg}/>
             <CoffeeList newImg={img}/>
-            <Footer/>
         </>
     )
 }

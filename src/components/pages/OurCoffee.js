@@ -7,7 +7,6 @@ const OurCoffee = () => {
         <>
             <Header/>
             <CoffeeList/>
-            <Footer/>
         </>
     )
 }

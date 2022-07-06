@@ -1,14 +1,15 @@
 import './MainHeader.sass';
 import logo from '../../img/logo_2.png';
+import {Link} from 'react-router-dom';
 
 const MainHeader = () => {
     return (
         <header className="header">
             <div className="container">
                 <ul className="header__items">
-                    <li className="header__item"><a href="#">Coffee house</a></li>
-                    <li className="header__item"><a href="#">Our coffee</a></li>
-                    <li className="header__item"><a href="">For your pleasure</a></li>
+                    <li className="header__item"><Link to='/'>Coffee house</Link></li>
+                    <li className="header__item"><Link to='/our_coffee'>Our coffee</Link></li>
+                    <li className="header__item"><Link to='/for_your_pleasure'>For your pleasure</Link></li>
                 </ul>
                 <h1 className="header__title">Everything You Love About Coffee </h1>
                 <div className="header__wrapper">

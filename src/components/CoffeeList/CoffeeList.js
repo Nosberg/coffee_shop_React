@@ -11,7 +11,7 @@ const CoffeeList = ({newImg}) => {
                 <div className="wrapper">
                     <img src={newImg ? newImg : img} alt="" className="coffeeList__img" />
                     <div className='coffeeList__wrapper'>
-                        <h2 className="coffeeList__title">About our beans</h2>
+                        <h2 className="coffeeList__title">{newImg ? 'About our goods' : 'About our beans'}</h2>
                         <div className="footer__wrapper">
                             <img src={logo_black} alt="" className="footer__logo" />
                             <div className="footer__divider_left"></div>
