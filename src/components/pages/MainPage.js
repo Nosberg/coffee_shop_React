@@ -1,7 +1,6 @@
-import AboutUs from "../AboutUs/AboutUs"
-import MainHeader from "../MainHeader/MainHeader"
-import OurBest from "../OurBest/OurBest"
-import Footer from "../Footer/Footer"
+import AboutUs from "../AboutUs/AboutUs";
+import MainHeader from "../MainHeader/MainHeader";
+import OurBest from "../OurBest/OurBest";
 
 
 const MainPage = () => {

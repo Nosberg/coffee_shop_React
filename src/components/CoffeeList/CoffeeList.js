@@ -2,9 +2,12 @@ import './CoffeeList.sass';
 import img from '../../img/girl.jpg';
 import logo_black from '../../img/logo_2_black.png';
 import aromistico from '../../img/aromistico.jpg';
-import Footer from '../Footer/Footer';
+import { useHttp } from '../../hooks/http.hook';
 
 const CoffeeList = ({newImg}) => {
+    const {request} = useHttp();
+    request('http://localhost:3001/heroes', 'GET')
+        .then(data => console.log(data));
     return (
         <main className="coffeeList">
             <div className="container">
