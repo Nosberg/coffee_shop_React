@@ -1,13 +1,35 @@
 import './CoffeeList.sass';
 import img from '../../img/girl.jpg';
 import logo_black from '../../img/logo_2_black.png';
-import aromistico from '../../img/aromistico.jpg';
 import { useHttp } from '../../hooks/http.hook';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const CoffeeList = ({newImg}) => {
+    const [coffee, setCoffee] = useState([]);
     const {request} = useHttp();
-    request('http://localhost:3001/heroes', 'GET')
-        .then(data => console.log(data));
+    const getCoffee = async () => {
+        const res = await request('http://localhost:3001/heroes', 'GET');
+        return res;
+    }
+    useEffect(() => {
+        getCoffee()
+            .then(data => setCoffee(data));
+    }, []);
+
+    let arr = coffee.map(item => {
+        return (
+                    <li key={item.id} className="coffeeList__coffee_item">
+                        <Link state={{id: item.id}} to='/coffee_page' className='coffeeList__link'><img src={item.thumbnail} alt="" /></Link>
+                        <div className="coffeeList__coffee_descr">{item.name}</div>
+                        <div className="coffeeList__country">
+                            {item.country}
+                        </div>
+                        <div className="coffeeList__price">6.99$</div>
+                    </li>
+        )
+    })
     return (
         <main className="coffeeList">
             <div className="container">
@@ -47,7 +69,8 @@ const CoffeeList = ({newImg}) => {
                     </div>
                 </div>
                 <ul className="coffeeList__coffee">
-                    <li className="coffeeList__coffee_item">
+                    {arr}
+                    {/* <li className="coffeeList__coffee_item">
                         <a href="" className='coffeeList__link'><img src={aromistico} alt="" /></a>
                         <div className="coffeeList__coffee_descr">AROMISTICO Coffee 1 kg</div>
                         <div className="coffeeList__country">
@@ -94,7 +117,7 @@ const CoffeeList = ({newImg}) => {
                             Brazil
                         </div>
                         <div className="coffeeList__price">6.99$</div>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </main>

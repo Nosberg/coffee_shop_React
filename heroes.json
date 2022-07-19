@@ -2,48 +2,59 @@
   "heroes": [
     {
       "id": 1,
-      "name": "Первый герой",
-      "description": "Первый герой в рейтинге!",
-      "element": "fire"
+      "name": "AROMISTICO Coffee 1 kg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "thumbnail": "https://sun9-west.userapi.com/sun9-64/s/v1/ig2/1fdZ9MOWvQSkIyGA9v_HQcIfjthlM-EKcpF_L-gGcESrf49WDZSp6vENjgFtw4L76nXodb5msH9W-ft5_N9H9-ut.jpg?size=167x115&quality=96&type=album",
+      "country": "brazil"
     },
     {
       "id": 2,
-      "name": "Неизвестный герой",
-      "description": "Скрывающийся в тени",
-      "element": "wind"
+      "name": "Solimo Coffee Beans 2 kg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "thumbnail": "https://sun9-west.userapi.com/sun9-14/s/v1/ig2/_A72TlVGwzKdsx9GRk6t2wu7kkYG9FNPgplyrZ0sRUeV5mD_T2IRkQntXtW-AbzK2y45w13TQf5EaMUEvGh_uLpl.jpg?size=151x130&quality=96&type=album",
+      "country": "kenya"
     },
     {
       "id": 3,
-      "name": "Морской герой",
-      "description": "Как аквамен, но не из DC",
-      "element": "water"
+      "name": "Presto Coffee Beans 1 kg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "thumbnail": "https://sun9-west.userapi.com/sun9-40/s/v1/ig2/qo_cjtfX5ntoxFJ68tYuuozjwLyR4SF9c1BzrFnLRV2lqbdsxyJ0_qspAnKQwaZWm31yyCAVTLO_n3JVoPxqVVU-.jpg?size=151x134&quality=96&type=album",
+      "country": "columbia"
+    },
+    {
+      "id": 4,
+      "name": "AROMISTICO Coffee 1 kg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "thumbnail": "https://sun9-west.userapi.com/sun9-64/s/v1/ig2/1fdZ9MOWvQSkIyGA9v_HQcIfjthlM-EKcpF_L-gGcESrf49WDZSp6vENjgFtw4L76nXodb5msH9W-ft5_N9H9-ut.jpg?size=167x115&quality=96&type=album",
+      "country": "brazil"
+    },
+    {
+      "id": 5,
+      "name": "Solimo Coffee Beans 2 kg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "thumbnail": "https://sun9-west.userapi.com/sun9-14/s/v1/ig2/_A72TlVGwzKdsx9GRk6t2wu7kkYG9FNPgplyrZ0sRUeV5mD_T2IRkQntXtW-AbzK2y45w13TQf5EaMUEvGh_uLpl.jpg?size=151x130&quality=96&type=album",
+      "country": "kenya"
+    },
+    {
+      "id": 6,
+      "name": "Presto Coffee Beans 1 kg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "thumbnail": "https://sun9-west.userapi.com/sun9-40/s/v1/ig2/qo_cjtfX5ntoxFJ68tYuuozjwLyR4SF9c1BzrFnLRV2lqbdsxyJ0_qspAnKQwaZWm31yyCAVTLO_n3JVoPxqVVU-.jpg?size=151x134&quality=96&type=album",
+      "country": "columbia"
     }
   ],
   "filters": [
     {
-      "name": "all",
-      "label": "Все",
-      "className": "btn-outline-dark"
+      "name": "all"
     },
     {
-      "name": "fire",
-      "label": "Огонь",
-      "className": "btn-danger"
+      "name": "brazil"
     },
     {
-      "name": "water",
-      "label": "Вода",
-      "className": "btn-primary"
+      "name": "kenya"
     },
     {
-      "name": "wind",
-      "label": "Ветер",
-      "className": "btn-success"
-    },
-    {
-      "name": "earth",
-      "label": "Земля",
-      "className": "btn-secondary"
+      "name": "columbia"
     }
   ]
 }

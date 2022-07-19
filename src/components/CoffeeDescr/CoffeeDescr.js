@@ -17,13 +17,13 @@ const CoffeeDescr = () => {
                             <div className="footer__divider_left"></div>
                             <div className="footer__divider_right"></div>
                         </div>
-                        <p className="coffeeDescr__descr">
+                        <div className="coffeeDescr__descr">
                             <div className="coffeeDescr__country"><span>Country:</span> Brasil</div>
                             <div className="coffeeDescr__description"><span>Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                             <div className="coffeeDescr__price">
                                 Price:    <span>16.99$</span>
                             </div>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
