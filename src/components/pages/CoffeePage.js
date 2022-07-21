@@ -4,12 +4,11 @@ import { useLocation } from "react-router-dom";
 
 const CoffeePage = () => {
     const location = useLocation();
-    const {id} = location.state;
-    console.log(id);
+    const {id, country, thumbnail, name, descr} = location.state;
     return (
         <>
             <Header/>
-            <CoffeeDescr/>
+            <CoffeeDescr data={location.state}/>
         </>
     )
 }

@@ -21,7 +21,11 @@ const CoffeeList = ({newImg}) => {
     let arr = coffee.map(item => {
         return (
                     <li key={item.id} className="coffeeList__coffee_item">
-                        <Link state={{id: item.id}} to='/coffee_page' className='coffeeList__link'><img src={item.thumbnail} alt="" /></Link>
+                        <Link state={{id: item.id, 
+                                      thumbnail: item.thumbnail, 
+                                      name: item.name, 
+                                      descr: item.description,
+                                      country: item.country}} to='/coffee_page' className='coffeeList__link'><img src={item.thumbnail} alt="" /></Link>
                         <div className="coffeeList__coffee_descr">{item.name}</div>
                         <div className="coffeeList__country">
                             {item.country}
