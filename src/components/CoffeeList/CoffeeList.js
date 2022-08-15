@@ -2,23 +2,28 @@ import './CoffeeList.sass';
 import img from '../../img/girl.jpg';
 import logo_black from '../../img/logo_2_black.png';
 import { useHttp } from '../../hooks/http.hook';
-import { useState } from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { getCoffeeList } from '../reducers.js/reducer';
 
 const CoffeeList = ({newImg}) => {
-    const [coffee, setCoffee] = useState([]);
     const {request} = useHttp();
     const getCoffee = async () => {
         const res = await request('http://localhost:3001/heroes', 'GET');
         return res;
     }
+
+    const coffeeListNew = useSelector((state) => state.coffee.value)
+    const dispatch = useDispatch();
+
     useEffect(() => {
+        console.log(coffeeListNew);
         getCoffee()
-            .then(data => setCoffee(data));
+            .then(data => dispatch(getCoffeeList(data)));
     }, []);
 
-    let arr = coffee.map(item => {
+    let arr = coffeeListNew.map(item => {
         return (
                     <li key={item.id} className="coffeeList__coffee_item">
                         <Link state={{id: item.id, 

@@ -1,10 +1,9 @@
-import img from '../../img/coffee_big.jpg';
 import logo_black from '../../img/logo_2_black.png';
 
 import './CoffeeDescr.sass';
 
 const CoffeeDescr = (props) => {
-    const {country, descr, id, name, thumbnail} = props.data;
+    const {country, descr, thumbnail} = props.data;
     let countryUppercase = country[0].toUpperCase() + country.substring(1);
     return (
 

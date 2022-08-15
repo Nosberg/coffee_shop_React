@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 
 const CoffeePage = () => {
     const location = useLocation();
-    const {id, country, thumbnail, name, descr} = location.state;
     return (
         <>
             <Header/>
